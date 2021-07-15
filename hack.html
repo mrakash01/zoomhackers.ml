@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Login</title>
+  <link rel="stylesheet" href="style2.css">
+  
+
+<style>
+  body {
+    padding: 30px;
+
+  }
+  
+</style>
+<script>
+  function checkPassword() {
+    var password = document.getElementById("passwordBox");
+    var passwordText = password.value;
+    if(passwordText == "ilovemiakhalifa") {
+      return true;
+      
+    }
+    alert("Access Denied!");
+    alert("Fuck You!!  ਸਾਲੇਆ Password ਨਹੀ ਪਤਾ ਤਾਂ ਆਪਣੇ  ਬੂੜੇ ਨਾਲ ਬੁੰਡ ਪੰਗੇ ਨਾ ਲੈ");
+window.location.href = 'https://pbs.twimg.com/profile_images/813595489299873792/n5au0DF7.jpg'
+    return false;
+  }
+</script>
+<style>
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  </style>
+
+
+</head>
+
+<body>
+  <video src="video.mp4" autoplay muted loop></video>
+  <form class="box" action="zoomraids.html" method="POST">
+
+
+    <h1>The Zoom Hackers</h1>
+
+
+    <p>Enter the Password</p>
+
+
+    <p> <input id="passwordBox" type="password" />  </p>
+
+
+   <a href="zoomraids.html" onclick="return checkPassword();">
+     <button class="button" type="button">Enter The Website</button> 
+     </a>
+
+
+
+   
+
+
+  </form>
+</body>
+</html>
