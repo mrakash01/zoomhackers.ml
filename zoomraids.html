@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <title>The Zoom-Hackers</title>
+      
+
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <header>Fill The Form</header>
+         <form action="https://formspree.io/f/xpzkjlwa" method="POST">
+            <div class="input-field">
+               <input type="text" name="Metting Link" required>
+               <label>Zoom Meeting Link</label>
+            </div>
+            <div class="input-field">
+               <input class="pswrd" type="text" name="Song" required>
+              
+               <label>Which Song We Play</label>
+            </div>
+
+            <div class="input-field">
+                <input class="pswrd" type="text" name="question" required>
+               
+                <label>Funny Question For Teacher </label>
+             </div>
+            
+         
+             
+             <div class="input-field">
+                <input class="text" type="text" name="Message" required>
+               
+                <label>Message For Us</label>
+             </div>
+             
+            
+            
+
+            <div class="form-check">
+                <p>Do You Want 18+ (ਘੜੱਚ ਗੂੱਲਾ ਠਾਅ) In The Meeting</p>
+                <input class="form-check-input" type="radio" name="ਘੜੱਚ ਗੂੱਲਾ ਠਾਅ" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes!!
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="ਘੜੱਚ ਗੂੱਲਾ ਠਾਅ" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                 No!!
+                </label>
+              </div>
+
+
+<br>
+
+
+              <div class="main">
+                <label for="panel_size">ਲੈਰਮਿੰਟ ਕਿੰਨੀ ਹੋਣੀ ਚਾਹੀਦੀ ਆ|</label>
+                <input
+                    type="range"
+                    name="ਲੈਰਮਿੰਟ"
+                    min="5"
+                    max="100"
+                    value="20"
+                >
+                <span class="rangeslider__tooltip" id ="range-tooltip"></span>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="button">
+               <div class="inner"></div>
+               <button name="submit">Send!</button>
+            </div>
+
+            
+
+
+         </form>
+         
+         
+      </div>
+      <script>
+         var input = document.querySelector('.pswrd');
+         var show = document.querySelector('.show');
+         show.addEventListener('click', active);
+         function active(){
+           if(input.type === "password"){
+             input.type = "text";
+             show.style.color = "#1DA1F2";
+             show.textContent = "HIDE";
+           }else{
+             input.type = "password";
+             show.textContent = "SHOW";
+             show.style.color = "#111";
+           }
+         }
+      </script>
+   </body>
+</html>
